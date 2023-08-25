@@ -1,0 +1,14 @@
+CREATE TABLE customer
+(
+   id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
+   dni VARCHAR(30) NOT NULL,
+   name VARCHAR(100) NOT NULL,
+   address VARCHAR(255) NOT NULL,
+   email VARCHAR(100) NOT NULL,
+   phone_number VARCHAR(100) NOT NULL,
+   PRIMARY KEY(id),
+   UNIQUE(dni),
+   INDEX(dni)
+)
+DEFAULT CHARSET=utf8mb4
+COLLATE=utf8mb4_unicode_ci;
